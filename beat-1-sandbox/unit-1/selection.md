@@ -30,10 +30,27 @@ partial re-run costs about $0.20 — or run the skill on different candidates. O
 recording `reject` for the issue you chose earns no credit for this field.
 
 ```
-paste the output here, including the closing JSON block
+3. #69 — Output parser crashes on top-level JSON array — accept
+- Maintainer active ✅ · Repo in use ✅ (preferred) · Scope fits ✅ · Unclaimed ✅
+- Scope: names the exception, both files, the xfail marker to remove (manifest H-02), and a 2–4h estimate. Fully specified, just the largest of the three.
+- Unclaimed: no assignee, no PRs. One claim comment — Yina-Mu, author_association: NONE, 2026-09-20 — classmate, ignored under the house rule.
 ```
+On the ranking. Your fit profile in scope.md reads "I prefer C++. And I want to practice using Claude Code." — that names no languages, goals, or things to avoid, so it can't order anything. Your one preferred check ("Repo in use") is repo-level and identical across all three, so it can't break the tie either. The order above is therefore my inference, not your rubric's: ascending surface area for a newcomer (fixture data edit → one-field swap → new fallback branch plus test change). #64 also happens to be the only one with zero classmate claims. Write a real fit profile and the ranking becomes yours instead of mine.
 
+Two setup nits, unrelated to the grades. Your skill lives at ~/.claude/skills/issue_select/skill/SKILL.md; Claude Code looks for ~/.claude/skills/<name>/SKILL.md, so the extra nesting (and the underscore) means /issue-select isn't registered — I read the files directly this run. And the Weight cell on "Repo in use" reads prefered; I treated it as preferred.
 ---
+[
+  {
+    "item": "https://github.com/codepath/pathreview-ai301-fa26-s3/issues/69",
+    "checks": [
+      {"name": "Maintainer active", "grade": "pass", "evidence": "Last main commit 2026-09-16 by Aburke225 (COLLABORATOR), 4 days before today"},
+      {"name": "Repo in use", "grade": "pass", "evidence": "Issue #73 opened 2026-09-16, within the last 60 days"},
+      {"name": "Scope fits", "grade": "pass", "evidence": "Names the AttributeError, both files, the xfail marker H-02 to remove, and a 2-4 hour estimate; labeled good first issue"},
+      {"name": "Unclaimed", "grade": "pass", "evidence": "No assignee and no linked PRs; sole claim comment is from Yina-Mu (author_association NONE), which the Path Review house rule says does not block"}
+    ],
+    "verdict": "accept"
+  }
+]
 
 ## Eval iterations
 
